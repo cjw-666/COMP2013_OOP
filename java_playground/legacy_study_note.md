@@ -1,5 +1,3 @@
-[TOC]
-
 # OOP_Week1_OO_UML.pdf
 
 Outline:
@@ -72,3 +70,81 @@ Outline:
 3. Object Design: Detailed design
 4. Object-Oriented Programming: Implementation (Focus on this semester)
 
+
+## UML (Unified Modeling Language)
+
+- The most popular diagrammatic notation used for Object-Oriented Development
+- Support from OOA (Object-Oriented Analysis) to OOP (Object-Oriented Programming)
+- Consists of:
+  - **Class diagrams**
+  - Sequence diagrams
+  - Use case diagrams
+  - Activity diagrams
+
+### Class Diagrams
+
+- Describe the system in terms of *object classes* and their *relationship*
+- Natural ways of reflecting the real-world entities and their relationships
+- Essential part in OO software Development
+
+| Class name |
+| :--------: |
+| Attributes |
+| Operations |
+
+![Image result for uml class diagram](https://www.tutorialspoint.com/uml/images/uml_class_diagram.jpg)
+
+### Relationship between classes
+
+- Association (directional+Multiplicity) (关联)
+- Aggregation (聚合)
+- Composition (组合)
+- Inheritance (继承)
+- Polymorphisms (多态)
+
+#### Association (关联)
+
+- An association is a linkage between two classes.
+- A class *is aware of* and *holds a reference* to another class
+- Often referred as a “has-a” relationship
+
+##### Bidirectional or unidirectional (单向&双向)
+
+- Unidirectional Association: *A student can query the books he/she borrowed but it is **NOT** possible to find which student the book is lent to.*
+- Bidirectional Association: *A student can query the books he/she borrowed and it is **possible** to find which student the book is lent to.*
+
+##### Multiplicity (多重)
+
+> One student has only one library card, and one library card can only be owned by one student
+
+- One to one Relationship
+- One to many Relationship
+- Many to many Relationship
+
+#### Aggregation (聚合)
+
+- A special type of association
+- Used to model a "whole to its parts" relationship.
+- Also referred as a “has-a” relationship
+  - E.g.: College has Professors
+- **They may have different life time**
+
+#### Composition (组合)
+
+- Another form of the aggregation
+- Child class's instance **lifecycle is dependent** on the parent class's instance lifecycle
+
+#### Inheritance (继承)
+
+- Often referred as a “is-a” relationship
+  - E.g.: a dog is an animal
+
+#### Polymorphisms (多态)
+
+- Base class has more than one derived classes
+- Decide which method to run at **run time**
+- When adding more classes, no need to touch code in other classes
+
+> Realization/Implementation: For Interface
+
+![Image result for class relationship diagram](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Class-Diagram-Relationships.png)
