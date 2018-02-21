@@ -52,7 +52,7 @@ Outline:
 >
 > --- Andy Hunt and Dave Thomas
 
-- DRY: Do not Repeat Yourself
+- DRY: **D**o not **R**epeat **Y**ourself
 - Shy: Should not reveal the information about itself unless really necessary.
 - Tell the other guy: Send a message rather than a function call.
 
