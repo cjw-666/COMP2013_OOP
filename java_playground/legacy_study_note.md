@@ -208,5 +208,20 @@ public class Book {
 }
 ```
 
+### Composition
+
+```java
+public class Wheel {
+}
+public class Car {
+    public Wheel wheel;
+    public Car(Wheel wheel){
+        this.wheel = wheel;
+    }
+}
+```
+
+
+
 
 
