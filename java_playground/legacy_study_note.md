@@ -148,3 +148,65 @@ Outline:
 > Realization/Implementation: For Interface
 
 ![Image result for class relationship diagram](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Class-Diagram-Relationships.png)
+
+## Object-oriented Design
+
+1. Given a problem, considering which class/object will exist in the problem domain.
+2. Considering for each class/object, what field and methods it should have
+3. Considering the relationships between different classes/objects
+
+## Class Diagram -> Java Code
+
+### Unidirectional
+
+```java
+public class Student {
+    public String name;
+    public String studentID;
+    public Book myBook;
+}
+
+public class Book {
+    public String title;
+    public LIST String authors;
+}
+```
+
+### Bidirectional
+
+```java
+public class Student {
+    public String name;
+    public String studentID;
+    public Book myBook;
+}
+
+public class Book {
+    public String title;
+    public LIST String authors;
+    public Student theStudent;
+}
+```
+
+### Multiplicity
+
+```java
+public class Student {
+    public String name;
+    public String studentID;
+    public Book myBook;
+    private numberOfBooks;
+    public void maintainBooks(){
+        ...
+    }
+}
+
+public class Book {
+    public String title;
+    public LIST String authors;
+    public Student theStudent;
+}
+```
+
+
+
