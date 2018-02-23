@@ -145,7 +145,9 @@ Outline:
 - Decide which method to run at **run time**
 - When adding more classes, no need to touch code in other classes
 
-> Realization/Implementation: For Interface
+#### Realization/Implementation: For Interface
+
+---
 
 ![Image result for class relationship diagram](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Class-Diagram-Relationships.png)
 
@@ -208,20 +210,123 @@ public class Book {
 }
 ```
 
-### Composition
+### Aggregation
 
 ```java
 public class Wheel {
 }
 public class Car {
-    public Wheel wheel;
-    public Car(Wheel wheel){
+    public Wheel wheel;  // Car is aware of wheel
+    public Car(Wheel wheel){  // Car needs wheel to exist
         this.wheel = wheel;
     }
 }
 ```
 
+### Composition
 
+```java
+public class Department {
+    
+}
+public class Company {
+    public Department departments;
+    public Company(){
+        // Must creat departments before creating company
+        departments = new Departments;
+    }
+}
+```
 
+### Inheritance
 
+```java
+public class Animal {
+}
+public class Dog extends Animal {
+}
+```
 
+### Polymorphisms
+
+```java
+public class Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Square extends Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Line extends Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Circle extends Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+```
+
+### Realization
+
+```java
+public class Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Square implements Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Line implements Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+public class Circle implements Shape {
+    public void draw() {
+        
+    }
+    public void erase() {
+        
+    }
+}
+```
+## What can be classes?
+
+1. Software Requirement Specification
+2. Find all nouns in the SRS
+3. Remove the following nouns:
+   1. Duplicates
+   2. Unrelated
+   3. Vague or general nouns
+   4. Dependent nouns, which should be attributes
+   5. Interface, which is about other system interacting with the system
