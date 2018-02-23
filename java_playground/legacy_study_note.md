@@ -433,5 +433,69 @@ JRE: Java Runtime Environment - For User
 
 ### Running a Java Program
 
-- Use IDE to build a Java Project, and run Hello World
+1. Use IDE (e.g. JetBrains IntelliJ IDEA) to build a Java Project, and run Hello World
+2. Use Notepad to write HelloWorld.java, and then use Command Line to run:
+   - Change to the directory containing the file `HelloWorld.java`
+     - `javac HelloWorld.java`
+   - It generates a new file `HelloWorld.class`
+     - `java HelloWorld`
+
+```java
+HelloWorld.java
+public class HelloWorld {
+    /* The HelloWorld Program
+    -------------------
+    Illustrates a simple program displaying
+    a message.
+    */
+    public static void main (String[] args) {
+		System.out.println(“HelloWorld!");
+	}
+}
+```
+
+### Code Analyze
+
+- `class` key word: definition of classes
+
+- `{} (Curly braces)` after the `class`: enclose a block of code
+
+- `/**/`: comments
+
+  - ```
+    // Single line comment 1
+
+    /* */ Single line comment 2
+
+    /**
+     * Multiple line comment
+    **/
+    ```
+
+  - comment can be interpret by `javadoc`
+
+- ```java
+  public static void main (String[] args) {
+  	System.out.println(“HelloWorld!");
+  }
+  // This is a method of the class HelloWorld, named main()
+  // 'public static void' are the standard properties of the main() method
+  ```
+
+- ```java
+  System.out.println(“HelloWorld!");
+  // This is a statement (instruction) to display a message
+  // semi-colon after every statement
+  ```
+
+- ```
+  String[] args:
+  In Java args contains the supplied command-line arguments as an array of String objects.In other words, if you run your program as
+
+  java MyProgram one two
+
+  then args will contain ["one", "two"].
+  ```
+
+- ​
 
