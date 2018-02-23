@@ -92,7 +92,7 @@ Outline:
 | Attributes |
 | Operations |
 
-![Image result for uml class diagram](https://www.tutorialspoint.com/uml/images/uml_class_diagram.jpg)
+![UML class diagram](https://www.tutorialspoint.com/uml/images/uml_class_diagram.jpg)
 
 ### Relationship between classes
 
@@ -149,7 +149,7 @@ Outline:
 
 ---
 
-![Image result for class relationship diagram](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Class-Diagram-Relationships.png)
+![Class relationship diagram](https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Class-Diagram-Relationships.png)
 
 ## Object-oriented Design
 
@@ -330,3 +330,108 @@ public class Circle implements Shape {
    3. Vague or general nouns
    4. Dependent nouns, which should be attributes
    5. Interface, which is about other system interacting with the system
+
+# OOP_HelloWorld.pdf
+
+Outline:
+
+- Computer language and Java
+- History of Java language
+- Java Architecture
+- Java Virtual Machine (JVM)
+- Garbage collection
+- Java Development Environment
+- First Java Program - `HelloWorld.java`
+
+## Computer Language
+
+- Machine Language: Binary
+- Low-level languages: Assembly Language
+- High-level: Hunan-friendly languages
+  - Structure programming language [C, Pascal, Fortran]
+  - C++, a combination of Structure programming & objected oriented
+  - Java, pure object oriented language
+  - C# (.NET)
+
+## History of Java
+
+- Developed by Sun Micro.
+- Sun has merged into Oracle since 2010
+  - 1995, Sun issued JDK 1.0
+  - 1998, JDK 1.2, change name to Java 2
+  - JDK 1.3, 1.4, 1.5, 1.6, 1.7
+  - Latest version is JDK 1.9, also called JDK 9.0
+
+### Version of Java
+
+- Java Micro Edition (Java ME)
+  - Very small Java environment for smart cards, pages, phones, and set-top boxes.
+  - Subset of the standard Java libraries aimed at limited size and processing power.
+- Java Standard Edition (Java SE)
+  - The Basic Platform, which this course will cover
+- Java Enterprise Edition (Java EE)
+  - For business applications, web services, mission-critical systems.
+  - JSP, Servlets, JDBC, EJB3.0, Struts – Spring - Hibernate
+
+### Features of Java
+
+- Simple
+- Object-oriented
+- Platform neutral
+- Robust, secure, scalable.
+- Java is Everywhere
+
+### The heart of Java
+
+#### Java Virtual Machine
+
+- Read “byte code” and interpret it and executes the program
+
+#### Garbage collection
+
+- Release memory automatically
+
+## Compiler / Interpreter
+
+### Compiler
+
+- A program that translates a high-level language program into an equivalent low-level language program
+  - This translation process is called ***compiling***
+- e.g.: Program Written in High-level Language Compile to Executable Program in Low-level Language
+
+### Cross Platform
+
+Pitfalls:
+
+- Store and use different *compiled* versions
+- Availability of compiler(s) is a must
+- Compiler compatibility problem
+- Re-compile all versions after an update
+
+### Java Compilation Model
+
+![Java Compilation Model](http://i.imgur.com/KhUw309.png)
+
+### Byte-Code and the Java Virtual Machine
+
+- Java compiler translates Java programs into **byte-code**, a machine language for **Java Virtual Machine**
+- Once compiled to ***byte-code***, a Java program can be used
+  on any computer, making it very portable.
+- Write-Once -> Run-Anywhere
+
+#### Interpreter
+
+- This is the program that translates a program written in Java byte-code into the machine language for a particular computer when a Java program is executed.
+  - The interpreter translates and immediately executes each byte-code instruction, one after another
+  - Translating byte-code into machine code is relatively easy compared to the initial compilation step
+
+## The First Program
+
+JDK: Java Development Kit - For Development
+
+JRE: Java Runtime Environment - For User
+
+### Running a Java Program
+
+- Use IDE to build a Java Project, and run Hello World
+
