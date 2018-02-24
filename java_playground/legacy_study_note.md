@@ -497,5 +497,43 @@ public class HelloWorld {
   then args will contain ["one", "two"].
   ```
 
-- ​
 
+
+## Java Programming
+
+- A Java program consists of ***objects*** that interact with one another by means of actions (called ***methods***)
+- Other high-level languages (C, Fortran) have procedures, functions, and subprograms.
+  - These are called ***methods*** in Java
+  - All programming constructs in Java, including methods, appear in an ***object*** (which is an ***instance*** of a ***class***)
+- There are two types of Java programs: ***applications*** and ***applets***
+- A Java ***application program*** or "regular" Java program is a class with a method named `main`
+  - When a Java application program is run, the run-time system automatically invokes the method named `main`
+  - All Java application programs start with the `main` method
+  - Applets are not used often anymore
+  - Application programs may use a windowing interface or console (i.e., text) I/O.
+  - Java Swing (GUI)
+
+## Program terminology
+
+- Code: A program or a part of a program
+- Source code (or source program): A program written in a high-level language such as Java
+  - The input to the Compiler program
+- Object code: The translated low-level program
+  - The output from the compiler program, e.g., Java byte-code
+  - In the case of Java byte-code, the input to the Java byte-code interpreter
+
+### Syntax  and Semantics
+
+- Syntax: The arrangement of words and punctuations that are legal in a language, the ***grammar rules*** of a language
+- Semantics: The ***meaning*** of things written while following the syntax rules of a language
+
+> Tips: Error Checking
+>
+> - Bug: A mistake in a program
+>   - The process of eliminating bugs is called debugging
+> - Syntax error: A grammatical mistake in a program
+>   - The compiler (or IDE) can detect these errors, and will output an error message saying what it thinks the error is, and where it thinks the error is
+> - Run-time error: An error that is not detected until a program is run
+> - The compiler cannot detect these errors: an error message is not generated after compilation, but after execution (usually, program will not run!)
+> - Logic error: A mistake in the underlying algorithm for a program
+>   - The compiler cannot detect these errors, and no error message is generated after compilation or execution, but the program does not do what it is supposed to do
