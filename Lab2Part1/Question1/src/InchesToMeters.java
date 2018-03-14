@@ -1,5 +1,6 @@
 import java.util.*; // import all packages under java.util (in order to use Scanner)
 public class InchesToMeters {
+	
 	public static void main(String[] args){
 		Scanner inputs = new Scanner(System.in); // create a Scanner call inputs
 		
@@ -13,4 +14,5 @@ public class InchesToMeters {
 		
 		inputs.close(); // close the scanner inputs
 	}
+	
 }
