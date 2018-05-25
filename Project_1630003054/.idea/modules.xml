@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/Question1/Question1.iml" filepath="$PROJECT_DIR$/Question1/Question1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Question2/Question2.iml" filepath="$PROJECT_DIR$/Question2/Question2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Question3/Question3.iml" filepath="$PROJECT_DIR$/Question3/Question3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Question4/Question4.iml" filepath="$PROJECT_DIR$/Question4/Question4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Question5/Question5.iml" filepath="$PROJECT_DIR$/Question5/Question5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Question6/Question6.iml" filepath="$PROJECT_DIR$/Question6/Question6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Question7/Question7.iml" filepath="$PROJECT_DIR$/Question7/Question7.iml" />
     </modules>
   </component>
 </project>
