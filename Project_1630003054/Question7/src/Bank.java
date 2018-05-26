@@ -6,15 +6,29 @@ public class Bank {
 
     private ArrayList<IAccount> accounts;
 
+    private ArrayList<ModelListener> listeners;
+
     public Bank(String name) {
         this.name = name;
         // an arraylist was create when bank is created
         this.accounts = new ArrayList<IAccount>();
+        // arraylist use to store listeners
+        listeners = new ArrayList<ModelListener>();
+    }
+
+    public void addListener(ModelListener listener){
+        listeners.add(listener);
+    }
+
+    private void notifyListeners(){
+        for(ModelListener listener: listeners){
+            listener.update(); // update every listeners
+        }
     }
 
     public void addAccount(IAccount account){
         accounts.add(account);
-
+        notifyListeners();
     }
 
     public int totalMoney(){
@@ -38,6 +52,7 @@ public class Bank {
         for (IAccount account: accounts){
             if(account.getName().equals(name)){
                 account.withdraw(amount);
+                notifyListeners();
                 return; // do not throws exception after match
             }
         }
