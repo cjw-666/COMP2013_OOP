@@ -1,18 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class ViewSimple extends JFrame implements ModelListener {
+public class ViewSimple extends View {
 
-    private Bank m;
     private ControllerSimple c;
     private JLabel label;
 
     public ViewSimple(Bank m, ControllerSimple c) {
-        this.m = m;
+        super(m);
         this.c = c;
         this.setTitle("Total Money");
         this.setSize(400, 300);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
         label = new JLabel("Total amount of money: " + m.totalMoney()); // init the label
