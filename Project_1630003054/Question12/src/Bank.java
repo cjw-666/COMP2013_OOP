@@ -17,7 +17,7 @@ public class Bank {
         // arraylist use to store listeners
         listeners = new ArrayList<ModelListener>();
         history = new ArrayList<Integer>(); // Arraylist for Integer
-        history.add(0); // init status of a bank with 0 money
+        history.add(new Integer(0)); // init status of a bank with 0 money
     }
 
     public void addListener(ModelListener listener){

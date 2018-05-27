@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 
 public class ViewHistory extends View {
@@ -9,9 +10,9 @@ public class ViewHistory extends View {
         this.setTitle("View History");
         this.setSize(400, 300);
         this.setLocationRelativeTo(null);
-        this.setLayout(new GridLayout());
         HistoryPanel hp = new HistoryPanel(m);
         this.add(hp);
+        // this.add(new HistoryPanel(m));
         this.setVisible(true);
     }
 
